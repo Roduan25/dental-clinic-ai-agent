@@ -1,0 +1,28 @@
+[project]
+name = "clinic-reception-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "eyad", email = "eeyad334@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "google-api-python-client>=2.199.0",
+    "google-auth-httplib2>=0.4.2",
+    "google-auth-oauthlib>=1.4.1",
+    "openai>=3.3.1",
+    "pydantic>=2.13.4",
+    "pydantic-ai>=2.36.0",
+    "pydantic-settings>=2.15.0",
+    "python-telegram-bot>=22.8",
+    "tzdata>=2026.3",
+]
+
+[project.scripts]
+clinic-reception-agent = "clinic_reception_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
